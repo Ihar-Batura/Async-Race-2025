@@ -35,3 +35,9 @@ export interface IControlCarCreateUpdate {
   text: string;
   id: string;
 }
+
+export interface ICarsData {
+  color: string;
+  id: number;
+  name: string;
+}
