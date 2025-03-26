@@ -1,19 +1,18 @@
 @use '../abstracts/variables' as *;
 
 .header {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  font-family: $font-additional;
+  width: 100%;
+  height: 40px;
+  background: url('./assets/header_bk.png') center center / cover;
 }
 
-.header-logo {
-  margin: 0 auto;
-  font-size: 32px;
-}
+.logo {
+  display: inline-block;
 
-@media (width < 450px) {
-  .header-logo {
-    font-size: 25px;
-  }
+  margin: 0;
+
+  font-size: 26px;
+  color: $clr-light;
+  text-shadow: 2px 3px 2px $clr-main;
+  letter-spacing: 0.05rem;
 }
