@@ -17,7 +17,7 @@
   transition: 0.5s ease-out;
 
   &:disabled:hover {
-    cursor: default;
+    cursor: not-allowed;
     color: #1010104d;
   }
 }
@@ -63,4 +63,8 @@
 
 .navigation-btn:not([disabled]):hover {
   background-color: $clr-special;
+}
+
+#create-car-btn {
+  width: 108px;
 }

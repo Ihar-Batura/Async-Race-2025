@@ -5,6 +5,9 @@
 @use 'base/text' as *;
 
 @use 'components/button' as *;
+@use 'components/garage-controls' as *;
+@use 'components/garage-amount' as *;
+@use 'components/navigation' as *;
 
 @use 'layout/header' as *;
 @use 'layout/wrapper' as *;
