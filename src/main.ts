@@ -1,3 +1,4 @@
 import './sass/style.scss';
+import createHomePage from './pages/home';
 
-const body: HTMLElement = document.body;
+createHomePage();
