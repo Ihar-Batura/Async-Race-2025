@@ -1,7 +1,7 @@
 import createElement from './create_element';
 
 function createCar(color: string): HTMLElement {
-  const car = createElement({
+  const car: HTMLElement = createElement({
     tag: 'div',
     classes: ['car'],
   });
