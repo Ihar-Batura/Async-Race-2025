@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+  cursor: pointer;
+
+  display: block;
+
+  padding: 2px 12px;
+  border: none;
+  border-radius: 4px;
+
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+
+  transition: 0.5s ease-out;
+
+  &:disabled:hover {
+    cursor: default;
+    color: #1010104d;
+  }
+}
+
+.garage-btn,
+.winners-btn {
+  min-width: 100px;
+  font-size: 18px;
+
+  &:hover {
+    color: $clr-main;
+    box-shadow: 2px 2px 1px $clr-main;
+  }
+
+  &:active {
+    color: $clr-main;
+    background-color: $clr-special;
+    box-shadow: 2px 2px 1px $clr-main;
+  }
+
+  &.active {
+    color: $clr-main;
+    background-color: $clr-special;
+    box-shadow: 2px 2px 1px $clr-main;
+  }
+}
+
+.btn-color-green:not([disabled]) {
+  background-color: $clr-btn-green;
+}
+
+.btn-color-green:not([disabled]):hover {
+  background-color: $clr-special;
+}
+
+.btn-color-red:not([disabled]) {
+  background-color: $clr-main;
+}
+
+.btn-color-red:not([disabled]):hover {
+  background-color: $clr-special;
+}
+
+.navigation-btn:not([disabled]):hover {
+  background-color: $clr-special;
+}
