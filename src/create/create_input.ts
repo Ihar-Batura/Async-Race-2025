@@ -13,6 +13,7 @@ function createInput(options: ICreateInput): HTMLInputElement {
     min,
     pattern,
     addRules,
+    disabled,
     onInput,
     parent,
   } = options;
@@ -49,6 +50,9 @@ function createInput(options: ICreateInput): HTMLInputElement {
   }
   if (addRules) {
     input.setAttribute('aria-describedby', addRules);
+  }
+  if (disabled === true) {
+    input.setAttribute('disabled', ' ');
   }
   if (onInput) {
     input.oninput = onInput;

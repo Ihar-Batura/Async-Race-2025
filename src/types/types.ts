@@ -24,6 +24,14 @@ export interface ICreateInput {
   min?: string;
   pattern?: string;
   addRules?: string;
+  disabled?: boolean;
   onInput?: () => void;
   parent?: HTMLElement;
+}
+
+export interface IControlCarCreateUpdate {
+  placeholderText: string;
+  disabled: boolean;
+  text: string;
+  id: string;
 }
