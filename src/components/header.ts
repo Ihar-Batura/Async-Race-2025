@@ -1,5 +1,7 @@
 import createElement from '../create/create_element';
 import createButton from '../create/create_button';
+import clickBtnGarage from '../functional/button/click_btn_garage';
+import clickBtnWinners from '../functional/button/click_btn_winners';
 
 function createHeader(): HTMLElement {
   const header: HTMLElement = createElement({ tag: 'header', classes: ['header'] });
@@ -25,14 +27,14 @@ function createHeader(): HTMLElement {
   createButton({
     classes: ['btn', 'garage-btn', 'active'],
     text: 'Garage',
-    //onClick: () => clickBtnGarage(),
+    onClick: () => clickBtnGarage(),
     parent: btnsContainer,
   });
 
   createButton({
     classes: ['btn', 'winners-btn'],
     text: 'Winners',
-    //onClick: () => clickBtnWinners(),
+    onClick: () => clickBtnWinners(),
     parent: btnsContainer,
   });
 
