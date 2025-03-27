@@ -1,7 +1,9 @@
-import { carsAmountElement } from '../../elements/elements';
-
 function showSumCarsInGarage(sumCars: number): void {
-  carsAmountElement.textContent = `Cars in the garage (${sumCars})`;
+  const carsInGarage: HTMLElement | null = document.querySelector('.garage-cars-amount');
+
+  if (carsInGarage) {
+    carsInGarage.textContent = `Cars in the garage (${sumCars})`;
+  }
 }
 
 export default showSumCarsInGarage;
