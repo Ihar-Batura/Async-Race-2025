@@ -1,4 +1,5 @@
 import createElement from '../create/create_element';
+import createLink from '../create/create_link';
 
 function createFooter(): HTMLElement {
   const footer: HTMLElement = createElement({ tag: 'footer', classes: ['footer'] });
@@ -16,14 +17,13 @@ function createFooter(): HTMLElement {
     parent: wrapper,
   });
 
-  const link: HTMLElement = createElement({
+  createLink({
+    href: 'https://github.com/Ihar-Batura',
     classes: ['footer-link'],
     text: 'Ihar Batura',
+    target: '_blank',
     parent: wrapper,
   });
-
-  link.setAttribute('href', 'https://github.com/Ihar-Batura');
-  link.setAttribute('target', '_blank');
 
   return footer;
 }
