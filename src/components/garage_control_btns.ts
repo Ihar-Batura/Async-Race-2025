@@ -1,5 +1,8 @@
 import createElement from '../create/create_element';
 import createButton from '../create/create_button';
+import clickBtnRace from '../functional/button/click_btn_race';
+import clickBtnReset from '../functional/button/click_btn_reset';
+import createOneHundredRandomCars from '../functional/car/create_one_hundred_cars';
 
 function createGarageControlBtns(): HTMLElement {
   const btnsContainer: HTMLElement = createElement({
@@ -11,7 +14,7 @@ function createGarageControlBtns(): HTMLElement {
     classes: ['btn', 'cars-control-btn', 'btn-color-green'],
     id: 'btn-race',
     text: 'Race',
-    //onClick: () => clickBtnRace(),
+    onClick: () => clickBtnRace(),
     parent: btnsContainer,
   });
 
@@ -20,7 +23,7 @@ function createGarageControlBtns(): HTMLElement {
     id: 'btn-reset',
     text: 'Reset',
     disabled: true,
-    //onClick: () => clickBtnReset(),
+    onClick: () => clickBtnReset(),
     parent: btnsContainer,
   });
 
@@ -28,7 +31,7 @@ function createGarageControlBtns(): HTMLElement {
     classes: ['btn', 'cars-control-btn', 'btn-color-green'],
     id: 'btn-random-cars',
     text: 'Generate 100 random cars',
-    //onClick: () => createOneHundredRandomCars(),
+    onClick: () => createOneHundredRandomCars(),
     parent: btnsContainer,
   });
 
