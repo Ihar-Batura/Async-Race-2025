@@ -1,9 +1,10 @@
 import createElement from '../create/create_element';
+import createGaragePage from '../pages/garage';
 
 function createMain(): HTMLElement {
   const main: HTMLElement = createElement({ tag: 'main', classes: ['main'] });
-  //const garage = createGaragePage();
-  //main.append(garage);
+  const garage: HTMLElement = createGaragePage();
+  main.append(garage);
 
   return main;
 }
