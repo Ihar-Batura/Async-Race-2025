@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+
+h3 {
+  font-size: 17px;
+  color: $clr-light;
+  letter-spacing: 0.03rem;
+}
+
+.garage-cars-amount {
+  margin-left: auto;
+}
+
+.winners-cars-amount {
+  margin: 15px auto;
+}

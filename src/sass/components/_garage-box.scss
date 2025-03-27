@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+.garage-box {
+  position: relative;
+  width: 100%;
+  margin: 15px auto;
+}
+
+#winner-car {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 18px;
+  color: $clr-special;
+  text-shadow: 2px 3px 2px $clr-main;
+  letter-spacing: 0.03rem;
+}

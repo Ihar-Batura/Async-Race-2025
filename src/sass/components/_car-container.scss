@@ -1,0 +1,81 @@
+@use '../abstracts/variables' as *;
+
+.car-container {
+  position: relative;
+  height: 75px;
+  margin-bottom: 6px;
+  border-bottom: 2px dashed $clr-light;
+}
+
+.car-item-btns-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 36px;
+}
+
+.car-item-btn {
+  cursor: pointer;
+
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 4px;
+
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: $clr-btn-disabled;
+  }
+}
+
+.car-item-btn-start {
+  background: url('./start.svg') center center / contain;
+  background-color: $clr-btn-green;
+}
+
+.car-item-btn-return {
+  background: url('./return.svg') center center / contain;
+  background-color: $clr-main;
+}
+
+.car-item-btn-change {
+  background: url('./change.svg') center center / contain;
+  background-color: $clr-btn-green;
+}
+
+.car-item-btn-delete {
+  background: url('./delete.svg') center center / contain;
+  background-color: $clr-main;
+}
+
+.car-name {
+  color: $clr-light;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 90px;
+  height: 35px;
+}
+
+.car svg {
+  position: absolute;
+  top: -24px;
+  height: 80px;
+}
+
+.finish-img {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+
+  width: 40px;
+  height: 40px;
+
+  background: url('./finish-flag.svg') center center / contain;
+}

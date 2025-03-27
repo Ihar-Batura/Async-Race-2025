@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+
+.table-cell {
+  position: relative;
+
+  height: 30px;
+  padding: 5px 10px;
+
+  color: $clr-light;
+  text-align: center;
+}
+
+.table-wins,
+.table-record {
+  cursor: pointer;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    color: $clr-special;
+  }
+}
+
+.table-car svg {
+  position: absolute;
+  inset: -15px 0 0;
+}

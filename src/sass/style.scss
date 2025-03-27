@@ -6,8 +6,11 @@
 
 @use 'components/button' as *;
 @use 'components/garage-controls' as *;
-@use 'components/garage-amount' as *;
+@use 'components/cars-amount' as *;
 @use 'components/navigation' as *;
+@use 'components/garage-box' as *;
+@use 'components/car-container' as *;
+@use 'components/table' as *;
 
 @use 'layout/header' as *;
 @use 'layout/wrapper' as *;
