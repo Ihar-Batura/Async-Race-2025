@@ -36,8 +36,28 @@ export interface IControlCarCreateUpdate {
   id: string;
 }
 
-export interface ICarsData {
+export interface ICarData {
   color: string;
-  id: number;
   name: string;
+  id?: number;
+}
+
+export interface IEngineData {
+  velocity: number;
+  distance: number;
+}
+
+export interface IWinnersData {
+  wins: number;
+  time: number;
+  id?: number;
+}
+
+export interface ILink {
+  href: string;
+  classes?: string[];
+  id?: string;
+  text?: string;
+  target?: string;
+  parent?: HTMLElement;
 }
