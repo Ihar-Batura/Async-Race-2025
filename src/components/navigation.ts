@@ -1,5 +1,7 @@
 import createElement from '../create/create_element';
 import createButton from '../create/create_button';
+import prevPage from '../functional/button/click_prev_page';
+import nextPage from '../functional/button/click_next_page';
 
 function createPageNavigation(): HTMLElement {
   const navigation: HTMLElement = createElement({ tag: 'div', classes: ['navigation'] });
@@ -9,7 +11,7 @@ function createPageNavigation(): HTMLElement {
     classes: ['btn', 'navigation-btn', 'prev-btn'],
     id: 'btn-prev',
     disabled: true,
-    //onClick: () => prevPage(),
+    onClick: () => prevPage(),
     parent: navigation,
   });
 
@@ -25,7 +27,7 @@ function createPageNavigation(): HTMLElement {
     classes: ['btn', 'navigation-btn', 'next-btn'],
     disabled: true,
     id: 'btn-next',
-    //onClick: () => nextPage(),
+    onClick: () => nextPage(),
     parent: navigation,
   });
 
