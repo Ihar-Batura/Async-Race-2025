@@ -2,6 +2,9 @@ import { IControlCarCreateUpdate } from '../types/types';
 import createElement from '../create/create_element';
 import createInput from '../create/create_input';
 import createButton from '../create/create_button';
+import isValidInput from '../functional/input/check_is_valid_input';
+import createNewCar from '../functional/car/create_new_car';
+import updateCar from '../functional/car/update_car';
 
 function createControlCarCreateUpdate({
   placeholderText,
@@ -18,7 +21,7 @@ function createControlCarCreateUpdate({
     id: id + 'name',
     placeholder: placeholderText,
     disabled: disabled,
-    //onInput: () => isValidInput(`${id}name`),
+    onInput: () => isValidInput(`${id}name`),
     parent: carsControl,
   });
 
@@ -36,7 +39,7 @@ function createControlCarCreateUpdate({
     classes: ['btn', 'cars-control-btn', 'btn-color-green'],
     id: id + 'btn',
     disabled: disabled,
-    //onClick: () => (isCreateBtn ? createNewCar(id) : updateCar()),
+    onClick: () => (isCreateBtn ? createNewCar(id) : updateCar()),
     parent: carsControl,
   });
 
