@@ -16,7 +16,7 @@ function createGaragePage(): HTMLElement {
   });
 
   const navigation: HTMLElement = createPageNavigation();
-  const box = createElement({ tag: 'div', classes: ['garage-box'] });
+  const box: HTMLElement = createElement({ tag: 'div', classes: ['garage-box'] });
 
   garage.append(control, carsAmount, navigation, box);
 
