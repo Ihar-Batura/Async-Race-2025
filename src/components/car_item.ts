@@ -1,9 +1,9 @@
-import { ICarsData } from '../types/types';
+import { ICarData } from '../types/types';
 import createElement from '../create/create_element';
 import createCarItemBtns from './car_item_btns';
 import createCar from '../create/create_car';
 
-function createCarItem({ name, color, id }: ICarsData): HTMLElement {
+function createCarItem({ name, color, id }: ICarData): HTMLElement {
   const carContainer: HTMLElement = createElement({
     tag: 'div',
     classes: ['car-container'],
