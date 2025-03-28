@@ -6,18 +6,15 @@ import changeDisabledElementById from '../element/change_element_disable_by_id';
 function stateBtnsPrevAndNext(): void {
   const page: string = whatPageNumber();
   const pageWinners: boolean = isPageWinners();
-  let pages: boolean | string;
   let pagesAmount: number;
 
   if (pageWinners) {
     const pagesWinners: string = howMatchThereCarsOrWinners('winners-cars-amount');
     const pagesWinnersAmount: number = Math.ceil(+pagesWinners / 10);
-    pages = pageWinners;
     pagesAmount = pagesWinnersAmount;
   } else {
     const pagesGarage: string = howMatchThereCarsOrWinners('garage-cars-amount');
     const pagesGarageAmount: number = Math.ceil(+pagesGarage / 7);
-    pages = pagesGarage;
     pagesAmount = pagesGarageAmount;
   }
 
