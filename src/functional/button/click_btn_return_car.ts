@@ -14,7 +14,7 @@ function clickBtnReturnCar(): void {
           return;
         }
 
-        const parent = target.offsetParent;
+        const parent: Element | null = target.offsetParent;
 
         if (!(parent instanceof HTMLDivElement)) {
           return;
