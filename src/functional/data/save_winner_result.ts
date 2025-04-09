@@ -13,7 +13,7 @@ async function saveWinnerResult(id: string, finishTime: number): Promise<void> {
 
     winnerData.forEach((el) => {
       if (el.id === +id) {
-        const newTime: number = el.time > finishTime ? el.time : finishTime;
+        const newTime: number = el.time > finishTime ? finishTime : el.time;
         const newWins: number = el.wins + 1;
         updateWinnerInDB(+id, newWins, newTime);
         wasWinner = true;
