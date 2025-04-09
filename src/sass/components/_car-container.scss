@@ -29,22 +29,22 @@
 }
 
 .car-item-btn-start {
-  background: url('./start.svg') center center / contain;
+  background: url('../start.svg') center center / contain;
   background-color: $clr-btn-green;
 }
 
 .car-item-btn-return {
-  background: url('./return.svg') center center / contain;
+  background: url('../return.svg') center center / contain;
   background-color: $clr-main;
 }
 
 .car-item-btn-change {
-  background: url('./change.svg') center center / contain;
+  background: url('../change.svg') center center / contain;
   background-color: $clr-btn-green;
 }
 
 .car-item-btn-delete {
-  background: url('./delete.svg') center center / contain;
+  background: url('../delete.svg') center center / contain;
   background-color: $clr-main;
 }
 
@@ -77,5 +77,5 @@
   width: 40px;
   height: 40px;
 
-  background: url('./finish-flag.svg') center center / contain;
+  background: url('../finish-flag.svg') center center / contain;
 }
